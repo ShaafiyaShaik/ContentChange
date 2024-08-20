@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="3rd.css">
+</head>
+<body>
+    <div class="box1" id="box1">
+        <h1 id="head">Click the below button to Change!</h1>
+        <button onclick="change()" id="but">Click Here</button>
+    </div>
+</body>
+<script>
+    function change() {
+        const box = document.getElementById('box1');
+        const heading = document.getElementById('head');
+        const button = document.getElementById('but');
+
+        if (heading.innerHTML === "Click the below button to Change!") {
+            heading.innerHTML = "Content Changed!";
+            button.innerHTML = "Reset";
+            box.style.backgroundColor = "#F7EFE5";
+        } else {
+            heading.innerHTML = "Click the below button to Change!";
+            button.innerHTML = "Click Here";
+            box.style.backgroundColor = "rgba(21, 4, 21, 0.247)";
+        }
+    }
+</script>
+
+</html>

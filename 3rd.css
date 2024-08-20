@@ -1,0 +1,29 @@
+body {
+    background: linear-gradient(100deg, #7A1CAC, #EBD3F8);
+    margin: 0;
+    padding: 0;
+}
+
+.box1 {
+    height: 250px;
+    width: 500px;
+    margin: 150px auto;
+    background-color: rgba(21, 4, 21, 0.384);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    border-radius: 20px;
+}
+
+.box1 h1, .box1 button {
+    margin: 0;
+    padding: 0;
+}
+
+.box1 button {
+    padding: 5px;
+    font-size: 20px;
+    border-radius: 15px;
+    margin-top: 20px;
+}
